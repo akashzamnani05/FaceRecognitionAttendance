@@ -10,6 +10,8 @@ from mtcnn import MTCNN
 
 
 
+
+
 def get_model_files():
     with open('svm_classifier.pkl', 'rb') as f:
         model, in_encoder, out_encoder = pickle.load(f)
@@ -95,6 +97,7 @@ def start():
             print("Embeddings captured")
             print(get_name(emb))
             print("Frame captured after 3 seconds!")
+            
             
         # Break the loop if 'q' is pressed
         if cv2.waitKey(1) & 0xFF == ord('q'):

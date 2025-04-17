@@ -1,2 +1,5 @@
 train_class/
 images/
+facerecognition/
+__pycache__
+student_images_database01/
